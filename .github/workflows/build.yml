@@ -21,7 +21,7 @@ jobs:
         run: |
           mkdir -p "$PROJECT_DIR/app/src/main/assets"
           curl -fL -o "$PROJECT_DIR/app/src/main/assets/qrcode.min.js" https://cdnjs.cloudflare.com/ajax/libs/qrcode-generator/1.4.4/qrcode.min.js
-          curl -fL -o "$PROJECT_DIR/app/src/main/assets/jsQR.min.js" https://cdnjs.cloudflare.com/ajax/libs/jsQR/1.4.0/jsQR.min.js
+          curl -fL -o "$PROJECT_DIR/app/src/main/assets/jsQR.min.js" https://cdn.jsdelivr.net/npm/jsqr@1.4.0/dist/jsQR.js
       - uses: actions/setup-java@v4
         with:
           distribution: temurin
